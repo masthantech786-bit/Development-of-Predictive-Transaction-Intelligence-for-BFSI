@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background smooth left-right animation */
+@keyframes pan {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.animate-pan {
+  animation: pan 20s ease-in-out infinite;
+  background-size: 200% auto; /* Ensures smooth panning */
+}
